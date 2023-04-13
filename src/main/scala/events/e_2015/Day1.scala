@@ -1,12 +1,12 @@
-package events.e_2015.d1
+package events.e_2015
 
-import events.Challenge
+import events.{Challenge, paint}
 
 import scala.io.BufferedSource
 import scala.io.Source.fromFile
 
 class Day1 extends Challenge {
-  private val data: BufferedSource = fromFile("src/main/scala/events/e_2015/d1/input.txt")
+  private val data: BufferedSource = fromFile("src/main/scala/events/e_2015/inputs/day1.txt")
   private var floor = 0
   private var index: Option[Int] = None
 
@@ -29,7 +29,7 @@ class Day1 extends Challenge {
 
 
   override def solve(): String =
-    s"Task 1: $task1\tTask2: $task2"
+    s"${this.getClass.getSimpleName}\tTask 1: ${paint(task1)}\tTask2: ${paint(task2)}"
 
 
 }
