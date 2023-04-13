@@ -1,6 +1,6 @@
 package events.e_2015
 
-import events.{Challenge, paint}
+import events.{Challenge, printNicely}
 
 import scala.io.BufferedSource
 import scala.io.Source.fromFile
@@ -26,10 +26,7 @@ class Day1 extends Challenge {
     }
     index.get
   }
-
-
-  override def solve(): String =
-    s"${this.getClass.getSimpleName}\tTask 1: ${paint(task1)}\tTask2: ${paint(task2)}"
+  def getAnswer: String = printNicely(this.getClass.getSimpleName, task1, task2)
 
 
 }

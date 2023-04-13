@@ -1,6 +1,6 @@
 package events
 
 trait Challenge {
-  def solve(): String
+  def getAnswer: String
 
 }

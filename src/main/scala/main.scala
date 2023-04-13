@@ -1,10 +1,16 @@
-import events.Challenge
-import events.e_2015.Day1
+import events.e_2015.{Day2, *}
 
 
 @main
 def main(): Unit = {
-  val day =  new Day1
-  println(day.solve())
+  val days = List(
+    new Day1,
+    new Day2
+  )
+
+  days.foreach { day =>
+    println(day.getAnswer)
+  }
+
 
 }
