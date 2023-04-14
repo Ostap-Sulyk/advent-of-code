@@ -1,4 +1,4 @@
-import events.e_2015.{Day2, *}
+import events.e_2015.*
 
 
 @main
