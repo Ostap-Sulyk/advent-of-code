@@ -5,7 +5,8 @@ import events.e_2015.*
 def main(): Unit = {
   val days = List(
     new Day1,
-    new Day2
+    new Day2,
+    new Day3
   )
 
   days.foreach { day =>
