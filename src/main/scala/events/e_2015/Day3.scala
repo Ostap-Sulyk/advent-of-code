@@ -23,4 +23,18 @@ class Day3 extends Challenge {
     }._1.size
   }
 
+  private def task2: Int = {
+    input.zipWithIndex.foldLeft((Set((0, 0)), (0, 0), (0, 0))) { (acc, ci) =>
+      val (c, i) = ci
+      if (i % 2 == 0)
+        val newPos = move(c, acc._2)
+        (acc._1 + newPos, newPos, acc._3)
+      else
+        val newPos = move(c, acc._3)
+        (acc._1 + newPos, acc._2, newPos)
+
+    }._1.size
+  }
+
+  def getAnswer: String = printNicely(this.getClass.getSimpleName, task1, task2)
 }
