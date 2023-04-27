@@ -21,6 +21,8 @@ class Day4 extends Challenge{
 
   def task1: Int = LazyList.from(1).find(i => hash(secretKey + i).startsWith(prefix1)).get
 
+  def task2: Int = LazyList.from(1).find(i => hash(secretKey + i).startsWith(prefix2)).get
 
+  def getAnswer: String = printNicely(this.getClass.getSimpleName, task1, task2)
 }
 
