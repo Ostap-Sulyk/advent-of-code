@@ -1,6 +1,3 @@
-Certainly! Here's the README text you can copy and paste into your `README.md` file:
-
----
 
 # 🎄 Advent of Code in Go 🎄
 
@@ -99,9 +96,5 @@ May your days be merry and bright, and may all your bugs be light!
    (oo)    (oo)  
   //||\\  //||\\ 
 ```
-
----
-
-Feel free to customize this README with more decorations or specific details about your project. Happy coding!
 
 ---
