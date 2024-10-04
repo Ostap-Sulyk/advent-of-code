@@ -52,7 +52,7 @@ func parseDimensions(input string) []Prism {
 }
 
 func (d Day02) SolvePart1() int {
-	prisms := parseDimensions(input)
+	prisms := parseDimensions(input02)
 
 	totalSurface := 0
 	for _, prism := range prisms {
@@ -62,7 +62,7 @@ func (d Day02) SolvePart1() int {
 }
 
 func (d Day02) SolvePart2() int {
-	prisms := parseDimensions(input)
+	prisms := parseDimensions(input02)
 
 	totalRibbon := 0
 	for _, prism := range prisms {
@@ -75,7 +75,7 @@ func (d Day02) GetName() string {
 	return "Day 02"
 }
 
-var input = `3x11x24
+var input02 = `3x11x24
 13x5x19
 1x9x27
 24x8x21
